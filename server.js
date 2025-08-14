@@ -32,7 +32,7 @@ app.post('/create-order', async (req, res) => {
                 customer_phone: customerPhone
             },
             order_meta: {
-        return_url: `http://localhost:5173`
+        return_url: `https://uniplay-web.netlify.app`
             }
         }, {
             headers: {
