@@ -12,6 +12,10 @@ const CASHFREE_APP_ID = process.env.CASHFREE_APP_ID;
 const CASHFREE_SECRET_KEY = process.env.CASHFREE_SECRET_KEY;
 const CASHFREE_BASE_URL = "https://sandbox.cashfree.com/pg";
 
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
+
 app.post("/create-order", async (req, res) => {
   try {
     const { orderId, orderAmount, customerName, customerEmail, customerPhone } = req.body;
